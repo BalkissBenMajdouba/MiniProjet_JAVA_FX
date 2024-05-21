@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AgendaController">
+   <children>
+      <Label layoutX="310.0" layoutY="14.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Agenda" textFill="#a62626">
+         <font>
+            <Font name="Dubai Medium" size="12.0" />
+         </font></Label>
+      <TableView fx:id="agendaTable" layoutX="14.0" layoutY="50.0" prefHeight="332.0" prefWidth="665.0" style="-fx-border-color: #a62626; -fx-border-width: 2px;">
+         <columns>
+            <TableColumn fx:id="idActivitieColumn" prefWidth="24.79998779296875" style="-fx-font-size: 14px;" text="Id " />
+            <TableColumn fx:id="typeColumn" prefWidth="80.79998779296875" style="-fx-font-size: 14px;" text="Type" />
+            <TableColumn fx:id="nomColumn" prefWidth="73.5999755859375" style="-fx-font-size: 14px;" text="Nom" />
+            <TableColumn fx:id="dateColumn" prefWidth="66.39996337890625" style="-fx-font-size: 14px;" text="Date" />
+            <TableColumn fx:id="heureDebutColumn" prefWidth="84.79998779296875" style="-fx-font-size: 14px;" text="H Début" />
+            <TableColumn fx:id="heureFinColumn" prefWidth="70.4000244140625" style="-fx-font-size: 14px;" text="H Fin" />
+            <TableColumn fx:id="alerteColumn" prefWidth="44.800048828125" style="-fx-font-size: 14px;" text="Alerte" />
+            <TableColumn fx:id="deleteColumn" prefWidth="106.39999389648438" style="-fx-font-size: 14px;" text="Delete" />
+            <TableColumn fx:id="updateColumn" prefWidth="103.20001220703125" style="-fx-font-size: 14px;" text="Update" />
+         </columns>
+      </TableView>
+      <Button fx:id="returnButton" layoutX="14.0" layoutY="11.0" onAction="#returnToHome" prefHeight="35.0" prefWidth="50.0" style="-fx-font-family: 'Dubai'; -fx-background-color: #a62626; -fx-text-fill: white;" text="Return" />
+   </children>
+</AnchorPane>

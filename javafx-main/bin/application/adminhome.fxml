@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminHomeController">
+    <children>
+        <Label fx:id="welcomeLabel" layoutX="68.0" layoutY="60.0" text="Welcome" textFill="#a62626">
+            <font>
+                <Font name="Dubai Bold" size="24.0" />
+            </font>
+        </Label>
+        <HBox layoutX="20.0" layoutY="60.0" spacing="20.0" />
+          <Button fx:id="navigateButton1" layoutX="62.0" layoutY="160.0" onAction="#navigateToOtherFXML" prefHeight="53.0" prefWidth="106.0" style="-fx-background-color: #a62626; -fx-text-fill: white;" text="Add activity" />
+          <Button fx:id="navigateButton2" layoutX="181.0" layoutY="160.0" onAction="#navigateToOtherFXMLlist" prefHeight="53.0" prefWidth="106.0" style="-fx-background-color: #a62626; -fx-text-fill: white;" text="Activity list" />
+          <Button fx:id="navigateButton3" layoutX="300.0" layoutY="160.0" onAction="#navigateToAddEnseignant" prefHeight="53.0" prefWidth="106.0" style="-fx-background-color: #a62626; -fx-text-fill: white;" text="Add Teacher" />
+          <Button fx:id="navigateButton4" layoutX="419.0" layoutY="160.0" onAction="#navigateToDisplayEns" prefHeight="53.0" prefWidth="106.0" style="-fx-background-color: #a62626; -fx-text-fill: white;" text="List Teacher" />
+    </children>
+</Pane>

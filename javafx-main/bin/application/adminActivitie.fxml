@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminActivitieController">
+   <children>
+      <Label layoutX="229.0" layoutY="14.0" style="-fx-font-family: 'Dubai'; -fx-text-fill: #a62626;" text="Add Activite">
+         <font>
+            <Font name="Dubai Light" size="28.0" />
+         </font></Label>
+      <Label layoutX="203.0" layoutY="91.0" style="-fx-font-family: 'Dubai'; -fx-text-fill: #a62626;" text="Type:" />
+      <ComboBox fx:id="typeField" layoutX="309.0" layoutY="86.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="203.0" layoutY="131.0" style="-fx-font-family: 'Dubai'; -fx-text-fill: #a62626;" text="Nom:" />
+      <TextField fx:id="nomField" layoutX="309.0" layoutY="126.0" />
+      <Label layoutX="203.0" layoutY="171.0" style="-fx-font-family: 'Dubai'; -fx-text-fill: #a62626;" text="Date:" />
+      <DatePicker fx:id="dateField" layoutX="309.0" layoutY="166.0" />
+      <Label layoutX="203.0" layoutY="211.0" style="-fx-font-family: 'Dubai'; -fx-text-fill: #a62626;" text="Heure Debut:" />
+      <ComboBox fx:id="heureDebutHourField" layoutX="309.0" layoutY="206.0" prefHeight="26.0" prefWidth="74.0" />
+      <ComboBox fx:id="heureDebutMinuteField" layoutX="383.0" layoutY="206.0" prefHeight="26.0" prefWidth="74.0" />
+      <Label layoutX="203.0" layoutY="251.0" style="-fx-font-family: 'Dubai'; -fx-text-fill: #a62626;" text="Heure Fin:" />
+      <ComboBox fx:id="heureFinHourField" layoutX="309.0" layoutY="246.0" prefHeight="26.0" prefWidth="74.0" />
+      <ComboBox fx:id="heureFinMinuteField" layoutX="383.0" layoutY="246.0" prefHeight="26.0" prefWidth="74.0" />
+      <Label layoutX="203.0" layoutY="291.0" style="-fx-font-family: 'Dubai'; -fx-text-fill: #a62626;" text="Alerte:" />
+      <CheckBox fx:id="alerteField" layoutX="309.0" layoutY="286.0" />
+      <Button fx:id="submitButton" layoutX="246.0" layoutY="329.0" onAction="#addActivite" prefHeight="41.0" prefWidth="97.0" style="-fx-font-family: 'Dubai'; -fx-background-color: #a62626; -fx-text-fill: white;" text="Add Activite" />
+      <Button fx:id="returnButton" layoutX="25.0" layoutY="18.0" onAction="#returnToAdminHome" prefHeight="35.0" prefWidth="50.0" style="-fx-font-family: 'Dubai'; -fx-background-color: #a62626; -fx-text-fill: white;" text="Return" />
+   </children>
+</AnchorPane>

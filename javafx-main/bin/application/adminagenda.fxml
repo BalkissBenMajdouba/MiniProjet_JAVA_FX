@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminAgendaController">
+   <children>
+      <Label layoutX="365.0" layoutY="14.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #a62626;" text="Agenda" />
+      <TableView fx:id="agendaTable" layoutX="20.0" layoutY="58.0" prefHeight="361.0" prefWidth="762.0" style="-fx-border-color: #a62626; -fx-border-width: 2px;">
+         <columns>
+            <TableColumn fx:id="idActivitieColumn" prefWidth="30.4000244140625" style="-fx-font-size: 14px; -fx-alignment: CENTER;" text="ID" />
+            <TableColumn fx:id="typeColumn" prefWidth="110.40003204345703" style="-fx-font-size: 14px; -fx-alignment: CENTER;" text="Type" />
+            <TableColumn fx:id="nomColumn" prefWidth="86.39996337890625" style="-fx-font-size: 14px; -fx-alignment: CENTER;" text="Nom" />
+            <TableColumn fx:id="dateColumn" prefWidth="113.5999755859375" style="-fx-font-size: 14px; -fx-alignment: CENTER;" text="Date" />
+            <TableColumn fx:id="heureDebutColumn" prefWidth="64.0" style="-fx-font-size: 14px; -fx-alignment: CENTER;" text="H Début" />
+            <TableColumn fx:id="heureFinColumn" prefWidth="79.199951171875" style="-fx-font-size: 14px; -fx-alignment: CENTER;" text="Heure Fin" />
+            <TableColumn fx:id="alerteColumn" prefWidth="55.999908447265625" style="-fx-font-size: 14px; -fx-alignment: CENTER;" text="Alerte" />
+            <TableColumn fx:id="deleteColumn" prefWidth="96.800048828125" style="-fx-font-size: 14px; -fx-alignment: CENTER;" text="Delete" />
+            <TableColumn fx:id="updateColumn" prefWidth="116.79998779296875" style="-fx-font-size: 14px; -fx-alignment: CENTER;" text="Update" />
+         </columns>
+      </TableView>
+      <Button fx:id="returnButton" layoutX="20.0" layoutY="11.0" onAction="#returnToAdminHome" prefHeight="35.0" prefWidth="50.0" style="-fx-font-family: 'Dubai'; -fx-background-color: #a62626; -fx-text-fill: white;" text="Return" />
+   </children>
+</AnchorPane>

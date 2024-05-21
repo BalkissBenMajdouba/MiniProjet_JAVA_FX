@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="344.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddEnseignantController">
+    <children>
+        <GridPane layoutX="165.0" layoutY="94.0" prefHeight="219.0" prefWidth="239.0">
+            <children>
+                <Label text="Nom:" textFill="#a62626" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="nomField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                
+                <Label text="Prénom:" textFill="#a62626" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <TextField fx:id="prenomField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                
+                <Label text="Téléphone Mobile:" textFill="#a62626" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <TextField fx:id="telephoneMobileField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                
+                <Label text="Email:" textFill="#a62626" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                
+                <Label text="ID Département:" textFill="#a62626" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                <TextField fx:id="idDepartementField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                
+                <Button onAction="#handleAddEnseignant" style="-fx-background-color: #a62626;" text="Add Enseignant" textFill="WHITE" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+            </children>
+         <columnConstraints>
+            <ColumnConstraints maxWidth="126.19998474121094" minWidth="100.59996337890625" prefWidth="126.19998474121094" />
+            <ColumnConstraints maxWidth="138.20003662109377" minWidth="112.60001525878907" prefWidth="112.60001525878907" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints maxHeight="42.39998779296875" minHeight="28.799981689453126" prefHeight="28.799981689453126" />
+            <RowConstraints maxHeight="22.400018310546876" minHeight="8.800012207031251" prefHeight="22.400018310546876" />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints maxHeight="47.20000610351562" minHeight="27.20000610351562" prefHeight="27.20000610351562" />
+            <RowConstraints maxHeight="23.99999389648437" minHeight="3.9999938964843693" prefHeight="23.99999389648437" />
+         </rowConstraints>
+        </GridPane>
+      <Text fill="#a62626" layoutX="196.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Enseignant">
+         <font>
+            <Font name="Dubai Bold" size="26.0" />
+         </font>
+      </Text>
+      <Button fx:id="returnButton" layoutX="35.0" layoutY="28.0" onAction="#returnToAdminHome" prefHeight="35.0" prefWidth="50.0" style="-fx-font-family: 'Dubai'; -fx-background-color: #a62626; -fx-text-fill: white;" text="Return" />
+    </children>
+</Pane>
